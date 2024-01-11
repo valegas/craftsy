@@ -1,0 +1,172 @@
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.home__main_section {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 800px;
+}
+.home__main_section {
+    font-size: 14px;
+}
+
+.home_mainsection_article {
+    width: 380px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.home_mainsection_article img {
+    width: 100%;
+}
+
+.home_mainsectionarticle_boton{
+    padding: 10px;
+    width: 25%;
+    background-color: var(--colorNaranja);
+    color: white;
+    text-align: center;
+}
+.home_main_aside {
+    width: 320px; 
+}
+
+.titulos_h2 {
+    background-color:white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 3px solid lightblue;
+}
+
+.home_mainaside_section--tutoriales{
+    margin-bottom: 20px;
+}
+
+.home_mainaside_section--tutoriales a {
+    color:black;
+}
+.home_mainaside_section--tutoriales article {
+    background-color: white;
+    border: 1px solid lightblue;
+    display: flex;
+    padding: 2%;
+    align-items: center;
+}
+
+.home_mainaside_section--tutoriales article p{
+    margin-left: 5%;
+}
+
+.home_mainaside_section--publicidad {
+    margin-top: 30px;
+    background-color:white;
+}
+.home_mainaside_section--publicidad img{
+    padding: 10px;
+}
+header{
+    background-color: var(--colorNaranja)    ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px 0px;
+}
+
+header a{
+    color: white;
+    font-weight: bold;
+}
+
+header img{
+    margin: 0px 25px 0px 15px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 86%;
+}
+
+.header__nav ul{
+    gap: 15px;
+}
+
+.lista__hacia_la_izquierda {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.lista_haciala_derecha {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.header_nav_mobile{
+    display: none;
+}
+@media (max-width: 425px){
+    body{
+        width: 100vw;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .home__main_section{
+        width: 100%;
+        background-color: transparent;
+    }
+    .home_mainsection_article {
+        background-color: var(--color-blanco);
+        padding: 5%;
+        width: 100%;
+        margin: 5%;
+    }
+
+
+    .home_main_aside{
+        width: 100vw;
+    }
+
+    .home_main_aside img{
+        width: 100%;
+    }
+
+    .home_mainaside_section--tutoriales{
+        padding: 5%;
+        margin: 0 auto;
+    }
+   
+}
+
+
+@media (max-width: 425px){
+    .header__nav{
+        display: none;
+    }
+    header{
+        justify-content: space-between;
+    }
+    .header_nav_mobile{
+        display: block;
+        margin: 0px 20px;
+    }
+
+    .header_nav_mobile i {
+        font-size: 20px;
+        color: var(--color-blanco);
+    }
+}
