@@ -200,6 +200,7 @@
          flex-direction: row;
          color: white;
      }
+
      .nav-burger {
          display: none;
      }
@@ -262,58 +263,82 @@
      }
 
      .art-prod {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 45%;
-        margin-left: 19px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 45%;
+         margin-left: 19px;
      }
 
      .home-section-publicidad {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        margin-left: 32px
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction: row;
+         margin-left: 32px
      }
 
      .Publicidad {
-        width: 250px;
-        margin-left: 50px;
+         width: 250px;
+         margin-left: 50px;
      }
  }
 
- @media (min-width:769px) {
-
-     .nav-link {
-         color: white;
-     }
-
-     .header-link {
-         color: white;
-     }
-
-     .link {
-         color: white;
-         margin: 5% 12px 9px 51px;
-         height: 18px;
-         width: 168%;
-         display: flex;
-     }
-
-     .main-home {
+@media (min-width:769px) {
+    .header-home {
         display: flex;
-        justify-content: space-between;
-        margin-top: 17px;
-        width: 100%;
-        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    .logo {
+    width: 11%;
+    margin: 0;
+    }
+
+    .nav-link {
+    color: white;
+    font-size: 5px
+    }
+
+    .header-link {
+        color: white;
+    }
+    .header-link-regis{
+        display: flex;
+    margin-left: 128px;
+    gap: 12px;
+    color: white;
+    }
+    .link {
+    color: white;
+    margin: 5% 12px 9px 51px;
+    height: 18px;
+    width: 168%;
+        display: flex;
+    }
+
+    .main-home {
+         display: flex;
+        
+         margin-top: 17px;
+         width: 100%;
+         flex-direction: row;
      }
 
      .section-producto {
          display: flex;
          width: 60%;
      }
+     .ancla-prod{
+        display: flex;
+        border: 1px solid red;
+        background-color: orangered;
+        width: 75px;
+        height: 23px;
+        justify-content: center;
+     }
 
-      .home-piezas {
+     .home-piezas {
          margin: 29%;
          display: flex;
          flex-wrap: nowrap;
@@ -323,33 +348,55 @@
          display: flex;
          flex-wrap: wrap;
          flex-direction: row;
-         justify-content: space-around;
+         justify-content: flex-start;
          border: 1px solid white;
          align-content: space-around;
+         height: 30px;
+         margin-left: 22px;
+         margin-right: 22px;
 
      }
 
      .art-prod {
-        width: 67%;
-        display: flex;
-        justify-content: center;
+    width: 84%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 2px;
+    border: 5px solid white;
+    margin-left: 0px
      }
-     
-     .home-piezas{
-        width: 34%;
-        margin: 0%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        background-color: #bcf2ff;
-        border: 2px solid lightsteelblue;
-     }
-     .home-section-publicidad{
-        display: flex;
-        justify-content: center;
-        width: 65%;
-     }
-     .publicidad{
 
+     .home-piezas {
+         width: 34%;
+         margin: 0%;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: flex-start;
+         background-color: #bcf2ff;
+         border: 2px solid lightsteelblue;
+         justify-content: space-around;
+        align-content: flex-start;
      }
+
+     .home-section-publicidad {
+        display: flex;
+        justify-content: center;
+        width: 87%;
+        margin: 0px;
+     }
+     /* .publicidad {
+        width: 308px;
+    margin-left: 0px;
+    background-color: white; */
+     
+     .Publicidad{
+        width: 343px;
+        margin-left: 2px;
+     }
+    .img-public{
+    width: 94%;
+    margin-left: 0px;
+    border: 8px solid white;
+    }
 }
